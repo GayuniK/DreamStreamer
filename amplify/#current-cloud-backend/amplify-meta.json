@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-musicapp-dev-bbb9d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::637423308295:role/amplify-musicapp-dev-bbb9d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::637423308295:role/amplify-musicapp-dev-bbb9d-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-musicapp-dev-bbb9d-deployment",
+      "UnauthRoleName": "amplify-musicapp-dev-bbb9d-unauthRole",
+      "StackName": "amplify-musicapp-dev-bbb9d",
+      "StackId": "arn:aws:cloudformation:ap-south-1:637423308295:stack/amplify-musicapp-dev-bbb9d/0aec50b0-72ae-11ef-ab13-0a23f55b7ff9",
+      "AmplifyAppId": "d2zuunbws2nuze"
+    }
+  },
+  "auth": {
+    "musicappb8fab172": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-musicapp-dev-bbb9d-deployment/amplify-cfn-templates/auth/musicappb8fab172-cloudformation-template.json",
+        "logicalId": "authmusicappb8fab172"
+      },
+      "lastPushTimeStamp": "2024-09-14T15:34:19.887Z",
+      "output": {
+        "UserPoolId": "ap-south-1_5vRTTxavo",
+        "AppClientIDWeb": "7rg4l213ag7r663ggq9ucm27mc",
+        "AppClientID": "17i0ikeh92irf71sfef2n0bmtp",
+        "IdentityPoolId": "ap-south-1:faa5fe2a-7445-4f07-b9fd-3fbf1c14f6f7",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-south-1:637423308295:userpool/ap-south-1_5vRTTxavo",
+        "IdentityPoolName": "musicappb8fab172_identitypool_b8fab172__dev",
+        "UserPoolName": "musicappb8fab172_userpool_b8fab172"
+      },
+      "lastPushDirHash": "yPRdx7SKVAJsRuKRkTGTvyq/KRk="
+    }
+  }
+}
